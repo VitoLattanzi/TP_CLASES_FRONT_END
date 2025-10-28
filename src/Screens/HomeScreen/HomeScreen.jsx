@@ -4,7 +4,7 @@ import { GetWorkspaces } from '../../services/workspaceService'
 
 
 const HomeScreen = () => {
-  const {sendRequest, responce, loading, error} = useFetch()
+  const {sendRequest, response, loading, error} = useFetch()
 
   useEffect( 
     ()=>{
