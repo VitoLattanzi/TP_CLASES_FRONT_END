@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 
 const HomeScreen = () => {
+  const {sendRequest, responce, loading, error} = useFetch()
+
+  useEffect( 
+    ()=>{
+      sendRequest(
+        () => GetWorkspaces()
+      )
+    },
+    []
+  )
+  console.log(responce, loading, error)
   return (
-    <div>HomeScreen</div>
+    <div>
+      <GetWorkspaces/>
+    </div>
   )
 }
 
