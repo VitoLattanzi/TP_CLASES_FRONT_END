@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useFetch } from 'react'
-
+import React, { useEffect } from 'react'
+import useFetch from '../../hooks/useFetch' 
 
 const HomeScreen = () => {
   const {sendRequest, responce, loading, error} = useFetch()
