@@ -14,7 +14,7 @@ const HomeScreen = () => {
     },
     []
   )
-  console.log(responce, loading, error, "hola")
+  console.log(response, loading, error, "hola")
   return (
     <div>
       <GetWorkspaces/>
